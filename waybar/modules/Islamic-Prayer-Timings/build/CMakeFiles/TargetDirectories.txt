@@ -1,0 +1,3 @@
+/home/younes/.config/waybar/modules/Islamic-Prayer-Timings/build/CMakeFiles/IPT.dir
+/home/younes/.config/waybar/modules/Islamic-Prayer-Timings/build/CMakeFiles/edit_cache.dir
+/home/younes/.config/waybar/modules/Islamic-Prayer-Timings/build/CMakeFiles/rebuild_cache.dir

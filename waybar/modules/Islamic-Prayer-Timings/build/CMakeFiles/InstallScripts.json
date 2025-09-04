@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/younes/.config/waybar/modules/Islamic-Prayer-Timings/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
