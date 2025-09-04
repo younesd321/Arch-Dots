@@ -5,39 +5,6 @@ Each step comes with clear explanations, Arabic comments in code blocks, and cur
 
 ---
 
-## Table of Contents
-
-1. [Prerequisites](#prerequisites)
-2. [Arch Linux Installation](#arch-linux-installation)
-    1. [Boot & Keyboard Setup](#boot--keyboard-setup)
-    2. [Connect to WiFi](#connect-to-wifi)
-    3. [Disk Partitioning](#disk-partitioning)
-    4. [Format Partitions](#format-partitions)
-    5. [Mount Partitions](#mount-partitions)
-    6. [Install Base System](#install-base-system)
-    7. [Fstab & Chroot](#fstab--chroot)
-    8. [Regional Settings](#regional-settings)
-    9. [User Setup](#user-setup)
-    10. [Sudo & NetworkManager](#sudo--networkmanager)
-    11. [GRUB Bootloader](#grub-bootloader)
-    12. [Reboot & Initial Checks](#reboot--initial-checks)
-    13. [Mirror Optimization](#mirror-optimization)
-    14. [Kernel & Headers Management (Recommended)](#kernel--headers-management-recommended)
-3. [Hyperland Installation & Configuration (Updated)](#hyperland-installation--configuration-updated)
-    1. [Install Hyperland and Dependencies](#install-hyperland-and-dependencies)
-    2. [Optional: Install AUR Helper and Apps](#optional-install-aur-helper-and-apps)
-    3. [Customize Hyperland](#customize-hyperland)
-    4. [Network DNS Configuration](#network-dns-configuration)
-    5. [Fonts Setup](#fonts-setup)
-    6. [QT Themes & Customization](#qt-themes--customization)
-    7. [Enable Multilib (Optional)](#enable-multilib-optional)
-    8. [Recommended Apps & Utilities](#recommended-apps--utilities)
-    9. [Disabling KDE Wallet (If Needed)](#disabling-kde-wallet-if-needed)
-4. [Useful Video Resources](#useful-video-resources)
-5. [Tips & Troubleshooting](#tips--troubleshooting)
-
----
-
 ## 1. Prerequisites
 
 - **A USB drive with Arch Linux ISO**
