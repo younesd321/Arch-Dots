@@ -23,7 +23,6 @@ Each step comes with clear explanations, Arabic comments in code blocks, and cur
     12. [Reboot & Initial Checks](#reboot--initial-checks)
     13. [Mirror Optimization](#mirror-optimization)
     14. [Kernel & Headers Management (Recommended)](#kernel--headers-management-recommended)
-    15. [Disabling KDE Wallet (If Needed)](#disabling-kde-wallet-if-needed)
 3. [Hyperland Installation & Configuration (Updated)](#hyperland-installation--configuration-updated)
     1. [Install Hyperland and Dependencies](#install-hyperland-and-dependencies)
     2. [Optional: Install AUR Helper and Apps](#optional-install-aur-helper-and-apps)
@@ -33,6 +32,7 @@ Each step comes with clear explanations, Arabic comments in code blocks, and cur
     6. [QT Themes & Customization](#qt-themes--customization)
     7. [Enable Multilib (Optional)](#enable-multilib-optional)
     8. [Recommended Apps & Utilities](#recommended-apps--utilities)
+    9. [Disabling KDE Wallet (If Needed)](#disabling-kde-wallet-if-needed)
 4. [Useful Video Resources](#useful-video-resources)
 5. [Tips & Troubleshooting](#tips--troubleshooting)
 
@@ -208,14 +208,12 @@ Each step comes with clear explanations, Arabic comments in code blocks, and cur
     Ctrl+O
     Ctrl+X
     ```
-
 15. **Set root password and create user:**
     ```bash
     passwd                           # تعيين كلمة مرور root
     useradd -m -g users -G wheel,storage,power -s /bin/bash younes   # إنشاء مستخدم جديد
     passwd younes                    # تعيين كلمة مرور للمستخدم
     ```
-
 ---
 
 ### 2.10 Sudo & NetworkManager
@@ -296,30 +294,6 @@ sudo pacman -Syu linux-headers linux-lts linux-lts-headers   # تثبيت رؤو
 ```bash
 pacman -Qs linux
 ```
-
----
-
-### 2.15 Disabling KDE Wallet (If Needed)
-
-> **لمنع ظهور نافذة محفظة KDE المزعجة (KWallet) خاصة في بيئات KDE أو عند تثبيت بعض التطبيقات:**
-
-1. أوقف المحفظة من الإعدادات:
-    ```bash
-    nano ~/.config/kwalletrc
-    # أضف أو عدل:
-    [Wallet]
-    Enabled=false
-    Ctrl+O
-    Ctrl+X
-    ```
-2. احذف بيانات المحفظة القديمة:
-    ```bash
-    rm -r ~/.local/share/kwalletd/
-    ```
-3. أعد تشغيل الجهاز:
-    ```bash
-    reboot
-    ```
 
 ---
 
@@ -520,7 +494,23 @@ yay -Syu
 ```bash
 sudo pacman -S gthumb hyprpaper
 ```
+### 3.9 Disabling KDE Wallet (If Needed)
 
+> **لمنع ظهور نافذة محفظة KDE المزعجة (KWallet) خاصة في بيئات KDE أو عند تثبيت بعض التطبيقات:**
+
+1. أوقف المحفظة من الإعدادات:
+    ```bash
+    nano ~/.config/kwalletrc
+    # أضف أو عدل:
+    [Wallet]
+    Enabled=false
+    Ctrl+O
+    Ctrl+X
+    ```
+2. احذف بيانات المحفظة القديمة:
+    ```bash
+    rm -r ~/.local/share/kwalletd/
+    ```
 ---
 
 ## 4. Useful Video Resources
@@ -534,7 +524,9 @@ sudo pacman -S gthumb hyprpaper
 - [Customization #2](https://youtu.be/yjyEaoi6qeM?si=7wAs8bvt_VqpA2rV)
 - [Customization #3](https://youtu.be/VF3dec6r0zs?si=FEBGUVOBYIwT9OUi)
 - [Customization #4](https://youtu.be/hNr1uyEqS48?si=dXGxAoBnnnSts4Y0)
-- [Customization #5](https://youtu.be/hQ6IisETfeo?si=4eANe2LvzPNy0sbt)
+- [Customization #5](https://youtu.be/hQ6IisETfeo?si=4eANe2LvzPNy0sbt)-
+- [Customization #6](https://www.youtube.com/watch?v=odgD_RdJjCU)
+
 
 ### Applications Customization
 - [Apps Customization #1](https://youtu.be/t3IqyWNOdPg?si=9CnvLia399qEhqaX)
@@ -544,7 +536,9 @@ sudo pacman -S gthumb hyprpaper
 - [Apps Customization #5](https://youtu.be/DDB1FTQPfr8?si=wY2S1vrkIlmfplpZ)
 
 ---
-
+### Arch instalition USING ARCH INSTALL SCRIPT
+- [video](https://www.youtube.com/watch?v=4dKzYmhcGEU&t=903s)
+---
 ## 5. Tips & Troubleshooting
 
 > **Tip:** Always update your system and mirrors after installation for the latest packages and security updates.
